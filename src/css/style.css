@@ -337,11 +337,20 @@ img {
   }
   .home1 .btn{
     padding: 10px;
-    border-radius: 10px;
-    color: var(--light-grey);
-    background-color: var(--dark-grey);
+    border-top-left-radius: 60px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  
+    color: black;
+    background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
+    background-size: 100% 200%;
     font: var(--small-font);
-    animation: upAnddown linear 3s 1s infinite;
+    animation: upAnddown linear 2s 3s infinite;
+    animation: gradient 4s ease infinite;
+  }
+  .btn:hover{
+    animation: shake 1s ease-in-out 1;
   }
 .home1 {
   display: block;
@@ -357,10 +366,11 @@ img {
   flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none;
-  padding: 0;
-  background-color: var(--light-grey);
-  margin-top: 30px;
+  margin-top: 20px;
+  background-size: 200% 200%;
+  background-image: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
   padding: 20px;
+  animation: gradient 4s ease infinite;
 }
 .navigate .icons {
   width: 40px;
