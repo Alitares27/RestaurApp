@@ -446,6 +446,24 @@ footer {
   animation: gradient 4s ease infinite;
   background-size: 100% 200%;
 }
+.menu-grid{
+  list-style: none;
+  display: flex;
+  
+}
+.menu-grid h2{
+  font-size: 1rem;
+}
+.menu-grid img{
+  width: 60%;
+}
+.menu-grid a{
+  color: #525b0f;
+}
+.menu-grid a:hover{
+  color: #f0a868;
+  font-style: italic;
+}
 
 /**LARGE VIEWPORT STYLING**/
 @media only screen and (min-width: 64em) {
