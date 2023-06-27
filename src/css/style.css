@@ -1,14 +1,10 @@
-.main-header {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .main-header img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-  }
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  overflow: hidden;
+  text-align: center;
+}
+.controls{
+  text-align: center;
+}

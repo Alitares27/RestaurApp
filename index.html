@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RestaurApp</title>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="/src/js/services.mjs"></script>
+    <script src="/src/js/menuData.mjs"></script>
+    <div class="controls">
+        <button type="button"class="cont" value="All">All</button>
+        <button type="button"class="cont1" value="America"><img src="/src/public/images/category-icon/AM.png" width="100px" height="100px" alt="">
+        <button type="button"class="cont2" value="Europa"><img src="/src/public/images/category-icon/EU.png" width="100px" height="100px" alt="">
+        <button type="button" class="cont3" value="Asia"><img src="/src/public/images/category-icon/AS.png" width="100px" height="100px" alt="">
+        <button type="button" class="cont4" value="Africa"><img src="/src/public/images/category-icon/AF.png" width="100px" height="100px" alt="">
+    </div>
+    
+    <div class="menu"></div>
+    
 
 </body>
 </html>
