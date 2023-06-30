@@ -1,11 +1,13 @@
-import { loadHeaderFooter } from "./utils.js";
+//import { loadHeaderFooter } from "./utils.mjs";
 
-loadHeaderFooter();
+//loadHeaderFooter();
   
   
 /* Footer Current year script */
 const year = document.querySelector("#year");
 year.textContent = new Date().getFullYear();
+
+
 
 /* Image Caurosel script */
 document.addEventListener("DOMContentLoaded", function() {

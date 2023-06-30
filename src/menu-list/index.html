@@ -6,28 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RestaurApp| Menu</title>
     <link rel="stylesheet" href="/src/css/style.css"" />
-    <!--<script src=" ../js/product-list.js" type="module">
-    </script>-->
+    <script src="/src/js/index.js" type="module"></script>
 </head>
 
 <body>
-    <header>
-    <div class="logo">
-        <img src="/src/public/images/logo/981368726.png" alt="RestaurApp Logo"  class="outline"/>
-        <a href="/index.html"> Restaur<span class="highlight">APP</span></a>
-    </div>
-    <div class="nav">
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-    </div>
-    <nav>
-        <ul id="primaryNav">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/src/menu-list/index.html">Menu</a></li>
-            <li><a href="/src/public/pages/aboutUs.html">About Us</a></li>
-            <li><a href="/src/public/pages/contactUs.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    </header>
+    <header class="divider" id="main-header"></header>
     <main class="divider">
         <div>
         <img class="slider-item" src="/src/public/images/1839090_1920.webp" />
@@ -69,24 +52,22 @@
             </ul>
         </section>
         <div class="navigate">
-            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="Home">
+            <a href="/index.html" target="Home">
                 <img class="icons" src="/src/public/images/category-icon/home.png" alt="home">
+                <h3>Home</h3>
             </a>
-            <a href="https://www.twitter.com/home" target="Loginpage">
+            <a href="/src/menu-list/index.html" target="Menu">
                 <img class="icons" src="/src/public/images/category-icon/location.png" alt="Location">
+                <h3>Menu</h3>
             </a>
-            <a href="https://www.instagram.com/home" target="loginpage">
-                <img class="icons" src="/src/public/images/category-icon/coffee-cup.png" alt="orders">
-            </a>
-            <a href="https://www.instagram.com/home" target="loginpage">
+            <a href="/src/login/index.html" target="user">
                 <img class="icons" src="/src/public/images/category-icon/user.png" alt="profile">
+                <h3>User</h3>
             </a>
         </div>
-    </main>
-    <footer>
-        
-        ©<span id="year"></span> | RestaurApp | We serve you better☺
-    </footer>
+</main>
+<footer id="main-footer"></footer>
+</body>
 </body>
 
 </html>
