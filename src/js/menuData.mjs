@@ -5,18 +5,13 @@ async function getMenuData() {
     const response = await fetch(url);
     const data = await response.json();
     displayMenu(data.menus);
-    
-}
+    console.log(data) 
+
+   }
     getMenuData(); 
 
   const displayMenu = (menus) => {
-    const cont = document.querySelector('.cont')
-    const chose = (cont.value)
-    
-    const conti = menus.filter(p=>p.continent == chose)
-    //console.log(conti)
-    const newMenu = []
-    newMenu.push(conti)
+ 
     menus.forEach((menu) => {
       const cards = document.querySelector('.menu');
       let card = document.createElement('section');
@@ -26,9 +21,12 @@ async function getMenuData() {
       let h3 = document.createElement('h3');
       let h4 = document.createElement('h4');
       let p = document.createElement('p')
-     
+
       // Build the h2 content out to show the menu's full name - finish the template string
+     if (menu.continent== 'Asia'){
+      console.log((menu.name))
       h1.textContent = `${menu.name}`;
+      h11.textContent= `${menu.continent}`;
       h4.textContent = `Country: ${menu.Country}`;
       p.textContent = `Ingredients: ${menu.ingredients}`;
       h3.textContent = `Price $ : ${menu.Price}`;
@@ -49,5 +47,8 @@ async function getMenuData() {
       card.appendChild(p)
        card.appendChild(portrait);
       cards.appendChild(card);
+     }
+      
     })// end of forEach loop
   } // end of function expression
+
