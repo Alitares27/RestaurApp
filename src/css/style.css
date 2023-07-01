@@ -1,10 +1,46 @@
-.menu{
+#root{
+  background-color: f5f5f5;
+}
+.productContainer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2em;
   overflow: hidden;
   text-align: center;
 }
 .controls{
   text-align: center;
+}
+img{
+  width: 10em;
+}
+.productBlock{
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+.productBlock div{
+  gap: 2em;}
+
+.itemImage{
+  width: 10em;
+  padding: 0.5em 0.5em;
+  object-fit:cover;
+}
+.sku{
+  font-size: 1em;
+  padding: 0 0;
+  margin: 0 0;
+}
+.name{
+  font-size: 1.5em;
+}
+.description{
+  font-size: 0.7em;
+}
+.Pagination{
+  width: 90%;
+  margin: auto auto;
 }

@@ -11,7 +11,7 @@ async function getMenuData() {
     getMenuData(); 
 
   const displayMenu = (menus) => {
- 
+
     menus.forEach((menu) => {
       const cards = document.querySelector('.menu');
       let card = document.createElement('section');
@@ -22,9 +22,6 @@ async function getMenuData() {
       let h4 = document.createElement('h4');
       let p = document.createElement('p')
 
-      // Build the h2 content out to show the menu's full name - finish the template string
-     if (menu.continent== 'Asia'){
-      console.log((menu.name))
       h1.textContent = `${menu.name}`;
       h11.textContent= `${menu.continent}`;
       h4.textContent = `Country: ${menu.Country}`;
@@ -39,7 +36,6 @@ async function getMenuData() {
       portrait.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
-
       card.appendChild(h1);
       card.appendChild(h11)
       card.appendChild(h4);
@@ -47,8 +43,6 @@ async function getMenuData() {
       card.appendChild(p)
        card.appendChild(portrait);
       cards.appendChild(card);
-     }
-      
-    })// end of forEach loop
-  } // end of function expression
+    })
+  } 
 
