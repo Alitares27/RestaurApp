@@ -1,3 +1,7 @@
+/* Current date script */
+const year = document.querySelector("#year");
+year.textContent = new Date().getFullYear();
+
 
 /* Image Caurosel script */
 document.addEventListener("DOMContentLoaded", function() {
