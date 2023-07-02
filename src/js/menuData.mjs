@@ -10,13 +10,9 @@ async function getMenuData() {
     getMenuData(); 
 
   const displayMenu = (menus) => {
-    const cont = document.querySelector('.cont')
-    const chose = (cont.value)
+   
     
-    const conti = menus.filter(p=>p.continent == chose)
-    //console.log(conti)
-    const newMenu = []
-    newMenu.push(conti)
+    
     menus.forEach((menu) => {
       const cards = document.querySelector('.menu');
       let card = document.createElement('section');

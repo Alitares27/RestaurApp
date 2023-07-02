@@ -1,11 +1,9 @@
-//import { loadHeaderFooter } from "./utils.mjs";
 
-//loadHeaderFooter();
+
+loadHeaderFooter();
   
   
-/* Footer Current year script */
-const year = document.querySelector("#year");
-year.textContent = new Date().getFullYear();
+
 
 
 

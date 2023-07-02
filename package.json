@@ -2,12 +2,12 @@
   "name": "restaurapp",
   "version": "1.0.0",
   "description": "WDD 330 Final Project",
-   "scripts": {
+  "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "author": "Aldair Payehuanca <pay22002@byui.edu> & Felix Wilson Gbedemah <>",
   "dependencies": {
-    "parcel": "^2.9.2"
+    "parcel": "^2.9.3"
   }
 }
