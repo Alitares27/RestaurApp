@@ -1,12 +1,4 @@
 
-
-loadHeaderFooter();
-  
-  
-
-
-
-
 /* Image Caurosel script */
 document.addEventListener("DOMContentLoaded", function() {
     let slideIndex = 0;
