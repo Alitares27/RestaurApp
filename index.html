@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,94 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="shortcut icon" href="./src/public/images/icons/store.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&display=swap"
+            rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation-->
-    <nav class="navigationHeader">
-        <div>
-            <a class="navbarBrand">StorApp</a>
-            <div class="mainHeader">
-                <ul class="navbarMenu">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><img src="./src/public/images/icons/store.png" alt="logo"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                </ul>
-                <div class="socialMedia">
-                    <a class="twitter" href="https://twitter.com/"><img src="./src/public/images/icons/twitter.png" alt="tw"></a>
-                    <a class="facebook" href="https://www.facebook.com/"><img src="./src/public/images/icons/facebook.png" alt="fb"></a>
-                    <a class="instagram" href="https://www.instagram.com/"><img src="./src/public/images/icons/instagram.png" alt="ig"></a>
+    <header class="headerBk">
+        <nav class="navigationHeader">
+            <div>
+                <a class="navbarBrand">StorApp</a>
+                <div class="mainHeader">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><img
+                        src="./src/public/images/icons/store.png" alt="logo"></a></li>
+                    <ul class="navbarMenu">
+                        <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    </ul>
+                    <div class="socialMedia">
+                        <a class="twitter" href="https://twitter.com/"><img src="./src/public/images/icons/twitter.png"
+                                alt="tw"></a>
+                        <a class="facebook" href="https://www.facebook.com/"><img
+                                src="./src/public/images/icons/facebook.png" alt="fb"></a>
+                        <a class="instagram" href="https://www.instagram.com/"><img
+                                src="./src/public/images/icons/instagram.png" alt="ig"></a>
+                    </div>
                 </div>
             </div>
+        </nav>
+        <div class="text-center">
+            <h1 class="title">Fashion at Hand</h1>
+            <h2 class="subTitle">Discover the best items For You</h2>
+            <a class="btnDiscover" onclick="fetchProducts()" href="#">Discover</a>
         </div>
-    </nav>
+    </header>
+   
     <!-- Masthead-->
     <header class="masthead">
         <img src="./src/public/images/business.jpg" alt="background">
-                <div class="text-center">
-                    <h1 class="title">Fashion at Hand</h1>
-                    <h2 class="subTitle">Discover the best items For You</h2>
-                    <a class="btnDiscover" href="#">Discover</a>
-                </div>
+        
 
     </header>
     <!-- About-->
     <section class="purpose">
-                <div >
-                    <h2 class="purposeTitle">What We Offer</h2>
-                    <p class="ourPurpose">
-                        StoreApp offers the best products from around the globe to a precise location
-                of the user and gives this information to the user so they can choose what best suits them, and if they are
-                satisfied, they can place an other for such product to be delivered to a location. It also provides links to find out
+        <div>
+            <h2 class="purposeTitle">What We Offer</h2>
+            <p class="ourPurpose">
+                StoreApp offers the best products from around the globe to a precise location
+                of the user and gives this information to the user so they can choose what best suits them, and if they
+                are
+                satisfied, they can place an other for such product to be delivered to a location. It also provides
+                links to find out
                 more about such restaurants that offer such services and also information about the company as a whole.
-                    </p>
-                </div>
-            
+            </p>
         </div>
-       
+
+        </div>
+
     </section>
     <div class="root">
-        <div class="categories">
-            <a href="#" onclick="getElectronics()">electronics</a>
-            <a href="#" onclick="getJewelery()">jewelery</a>
-            <a href="#" onclick="getMen()">men's clothing</a>
-            <a href="#" onclick="getWomen()">women's clothing</a>
+        <div class="categoriesLabel">
+            <button id="option1" onclick="one()" value="jewelery">jewelery</button>
+            <button id="option2" onclick="two()" value="electronics">electronics</button>
+            <button id="option3" onclick="three()" value="men's%20clothing">men's clothing</button>
+            <button id="option4" onclick="four()" value="women's%20clothing">women's clothing</button>
         </div>
-        
+
     </div>
     <div class="productContainer"></div>
     <nav class="Pagination">
         <ul class="pagination">
-          <li id="previous" class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li id="next" class="page-item"><a class="page-link" href="#">Next</a></li>
+            <li id="previous" class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li id="next" class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
-      </nav>
-            
+    </nav>
+
     </section>
 
-    
+
     <script src="/src/js/test.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -90,7 +103,9 @@
 
 
     <!-- Footer-->
-    <footer class="footer">&copy; 2023 StorApp </div></footer>
-   
+    <footer class="footer">&copy; 2023 StorApp </div>
+    </footer>
+
 </body>
+
 </html>

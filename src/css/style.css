@@ -1,7 +1,17 @@
-#root{
-  background-color: #f5f5f5;
+.headerBk {
+  position: absolute;
+  display: grid;
 }
-.productContainer{
+.navigationHeader {
+  position: relative;
+}
+.text-center {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.productContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2em;
@@ -9,105 +19,113 @@
   text-align: center;
 }
 
-.productBlock{
+.productBlock {
   background: white;
   width: 80%;
   margin: 0 auto;
   justify-content: center;
-
 }
-.productBlock div{
-  gap: 2em;}
+.productBlock div {
+  gap: 2em;
+}
 
-.itemImage{
+.itemImage {
   width: 10em;
   padding: 0.5em 0.5em;
-  object-fit:cover;
+  object-fit: cover;
 }
-.sku{
+.sku {
   font-size: 1em;
   padding: 0 0;
   margin: 0 0;
 }
-.name{
+.name {
   font-size: 1.5em;
 }
-.description{
+.description {
   font-size: 0.7em;
 }
-.Pagination{
+.Pagination {
   width: 90%;
   margin: 0 auto;
+  text-align: center;
+}
+.navigationHeader {
+  display: flex;
+}
+.mainHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10em;
 text-align: center;
 }
-.navigationHeader{
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr ;
-}
-.mainHeader{
-  display: flex;
-  gap: 10em;
-}
-.navbarBrand{
+.navbarBrand {
   text-decoration: none;
   color: black;
-  font-size: 3em;
+  font-size: 5em;
+  text-align: center;
 }
-.navbarMenu img{
+.mainHeader img {
   width: 8em;
 }
-.navbarMenu{
-
+.navbarMenu {
   display: flex;
+  font-size: 1.5em;
 }
-
-.socialMedia img{
+.socialMedia {
+  grid-column-start: 3;
+}
+.socialMedia img {
   width: 3em;
 }
-.nav-item{
+.nav-item {
   list-style: none;
 }
-.text-center{
+.text-center {
   position: relative;
   padding: 2em 0em;
 }
-.masthead img{
+.masthead img {
   width: 100%;
 }
-.purpose{
+.purpose {
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   width: 70%;
   padding: 2.5em 0em;
 }
-.purposeTitle{
-  font-family: 'Shadows Into Light', cursive;
+.purposeTitle {
+  font-family: "Shadows Into Light", cursive;
   font-size: 2.5em;
   font-weight: 700;
 }
-.ourPurpose{
-  font-family: 'Cormorant Garamond', cursive;
+.ourPurpose {
+  font-family: "Cormorant Garamond", cursive;
   font-weight: 500;
   font-size: 1.4em;
 }
-.title{
-  font-family: 'Kaushan Script', cursive;
+.title {
+  font-family: "Kaushan Script", cursive;
   font-size: 7em;
+  padding: 0.2em;
 }
-.subTitle{
-  font-family: 'Shadows Into Light', cursive;
+.subTitle {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
   font-size: 2em;
+  padding: 0.5em;
 }
-.btnDiscover{
+.btnDiscover {
   background-color: dodgerblue;
   border-radius: 1em;
   padding: 0.5em 1.5em;
   color: white;
   font-weight: 500;
+  font-size: 1.5em;
   text-decoration: none;
 }
-.addCart{
+.addCart {
   background-color: dodgerblue;
   border-color: transparent;
   font-weight: 500;
@@ -117,13 +135,22 @@ text-align: center;
   text-decoration: none;
 }
 
-.categories{
+.categoriesLabel {
   text-align: center;
+  padding: 2em;
 }
-.categories a{
-  padding: 2em 2em;
-  color: black;
-  text-decoration: none;
+.categoriesLabel button {
+  padding: 0.5em 1.5em;
+  color: white;
+  border-color: transparent;
   font-size: 1.2em;
   font-weight: 500;
+  background-color: dodgerblue;
+  border-radius: 1em;
+}
+.Pagination{
+  padding: 2em;
+}
+.Pagination ul{
+justify-content: center;
 }
