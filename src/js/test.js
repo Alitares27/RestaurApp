@@ -18,13 +18,25 @@ next.addEventListener("click", () => {
     fetchProducts(offset, limit);
   }
 });
-function fetchStore(id) {
-  fetch(`https://fakestoreapi.com/products/${id}`)
-    .then((res) => res.json())
-    .then((json) => {
-      createProduct(json);
-    });
+
+/*fetch data */
+const baseURL = "https://fakestoreapi.com/products/";
+async function convertToJson(res) {
+  const data = res.json();
+  if (res.ok) {
+    return data;
+  } else {
+    throw { name: "servicesError", message: jsonResponse };
+  }
 }
+
+async function fetchStore(id) {
+  const response = await fetch(baseURL + id);
+  const product = await convertToJson(response);
+  createProduct(product);
+  return product.Result;
+}
+
 function fetchProducts(offset, limit) {
   for (let i = offset; i <= offset + limit; i++) {
     fetchStore(i);
@@ -40,38 +52,34 @@ function one() {
 one();
 
 function two() {
-    const opt2 = document.getElementById("option2");
-const option2 = opt2.value;
-    productContainer.innerHTML = "";
-    getCategory(option2);
-  }
-  two();
-
-  function three() {
-    const opt3 = document.getElementById("option3");
-    const option3 = opt3.value;
-    productContainer.innerHTML = "";
-    getCategory(option3);
-  }
-  three();
-
-  function four() {
-    const opt4 = document.getElementById("option4");
-    const option4 = opt4.value;
-    productContainer.innerHTML = "";
-    getCategory(option4);
-  }
-  four();
-
-function getCategory(category) {
-  fetch('https://fakestoreapi.com/products/category/'+ category)
-    .then((res) => res.json())
-    .then((json) => {
-      createProduct(json);
-    });
-  /*.then(json=>console.log(json))*/
+  const opt2 = document.getElementById("option2");
+  const option2 = opt2.value;
+  getCategory(option2);
 }
-getCategory();
+two();
+
+function three() {
+  const opt3 = document.getElementById("option3");
+  const option3 = opt3.value;
+  productContainer.innerHTML = "";
+  getCategory(option3);
+}
+three();
+
+function four() {
+  const opt4 = document.getElementById("option4");
+  const option4 = opt4.value;
+  productContainer.innerHTML = "";
+  getCategory(option4);
+}
+four();
+
+async function getCategory(category) {
+  const response = await fetch(baseURL + category);
+  const data = await convertToJson(response);
+  createProduct(json);
+  return data.Result;
+}
 
 function createProduct(products) {
   const card = document.createElement("div");
@@ -106,13 +114,16 @@ function createProduct(products) {
   addCart.classList.add("addCart");
   addCart.textContent = "Add to Cart";
 
+  addCart.onclick = function () {
+    alert("Product Added");
+  };
+
   card.appendChild(number);
   card.appendChild(name);
   card.appendChild(imageContainer);
   card.appendChild(description);
   card.appendChild(price);
   card.appendChild(addCart);
-
   productContainer.appendChild(card);
 }
 
@@ -123,3 +134,7 @@ function removeChildNodes(parent) {
 }
 
 fetchProducts(offset, limit);
+
+const dates = document.getElementById("dates");
+const dateTime = new Date().toDateString();
+dates.innerHTML = dateTime;
