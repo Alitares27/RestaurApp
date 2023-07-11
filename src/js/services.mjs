@@ -30,7 +30,11 @@ async function convertToJson(res) {
   }
 }
 
-async function fetchStore(id) {
+fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
+
+export async function fetchStore(id) {
   const response = await fetch(baseURL + id);
   const product = await convertToJson(response);
   createProduct(product);
@@ -42,45 +46,14 @@ function fetchProducts(offset, limit) {
     fetchStore(i);
   }
 }
-
-function one() {
-  const opt1 = document.getElementById("option1");
-  const option1 = opt1.value;
-  productContainer.innerHTML = "";
-  getCategory(option1);
-}
-one();
-
-function two() {
-  const opt2 = document.getElementById("option2");
-  const option2 = opt2.value;
-  getCategory(option2);
-}
-two();
-
-function three() {
-  const opt3 = document.getElementById("option3");
-  const option3 = opt3.value;
-  productContainer.innerHTML = "";
-  getCategory(option3);
-}
-three();
-
-function four() {
-  const opt4 = document.getElementById("option4");
-  const option4 = opt4.value;
-  productContainer.innerHTML = "";
-  getCategory(option4);
-}
-four();
-
-async function getCategory(category) {
+/*Get Category of products*/
+export async function getCategory(category) {
   const response = await fetch(baseURL + category);
   const data = await convertToJson(response);
   createProduct(json);
   return data.Result;
 }
-
+/*Template of products*/
 function createProduct(products) {
   const card = document.createElement("div");
   card.classList.add("productBlock");
