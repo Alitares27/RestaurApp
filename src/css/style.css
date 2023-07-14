@@ -1,0 +1,156 @@
+.headerBk {
+  position: absolute;
+  display: grid;
+}
+.navigationHeader {
+  position: relative;
+}
+.text-center {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.productBlock {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.productBlock div {
+  gap: 2em;
+}
+
+.itemImage {
+  width: 10em;
+  padding: 0.5em 0.5em;
+  object-fit: cover;
+}
+.sku {
+  font-size: 1em;
+  padding: 0 0;
+  margin: 0 0;
+}
+.name {
+  font-size: 1.5em;
+}
+.description {
+  font-size: 0.7em;
+}
+.Pagination {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.navigationHeader {
+  display: flex;
+}
+.mainHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10em;
+text-align: center;
+}
+.navbarBrand {
+  text-decoration: none;
+  color: black;
+  font-size: 5em;
+  text-align: center;
+}
+.mainHeader img {
+  width: 8em;
+}
+.navbarMenu {
+  display: flex;
+  font-size: 1.5em;
+}
+.socialMedia {
+  grid-column-start: 3;
+}
+.socialMedia img {
+  width: 3em;
+}
+.nav-item {
+  list-style: none;
+}
+.text-center {
+  position: relative;
+  padding: 2em 0em;
+}
+.masthead img {
+  width: 100%;
+}
+.purpose {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  padding: 2.5em 0em;
+}
+.purposeTitle {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.ourPurpose {
+  font-family: "Cormorant Garamond", cursive;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 7em;
+  padding: 0.2em;
+}
+.subTitle {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 0.5em;
+}
+.btnDiscover {
+  background-color: dodgerblue;
+  border-radius: 1em;
+  padding: 0.5em 1.5em;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.addCart {
+  background-color: dodgerblue;
+  border-color: transparent;
+  font-weight: 500;
+  border-radius: 1em;
+  padding: 0.5em 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.categoriesLabel {
+  text-align: center;
+  padding: 2em;
+}
+.categoriesLabel button {
+  padding: 0.5em 1.5em;
+  color: white;
+  border-color: transparent;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: dodgerblue;
+  border-radius: 1em;
+}
+.Pagination{
+  padding: 2em;
+}
+.Pagination ul{
+justify-content: center;
+}

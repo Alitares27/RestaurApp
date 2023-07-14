@@ -1,0 +1,125 @@
+{
+    "menus":[
+        {
+        "id":"EU100",
+        "name": "Paella",
+        "image":"https://www.nestleprofessional-latam.com/sites/default/files/styles/np_recipe_detail/public/2022-07/paella.png?itok=CBvKkcsa",
+        "Country":"Spain",
+        "continent":"Europa",
+        "ingredients":["rice","seafood","rabbit"],
+        "Price":12.99
+},{
+        "id":"EU105",
+        "name": "Wiener Schnitzel",
+        "image":"https://ellerepublic.de/wp-content/uploads/2015/01/Schnitzel-DE-500x375.jpg",
+        "Country":"Austria",
+        "continent":"Europa",
+        "ingredients":["chicken breasts","flour","eggs","bread crumbs"],
+        "Price":8.99  
+},{
+        "id":"EU110",
+        "name": "Pizza",
+        "image":"https://cdn0.recetasgratis.net/es/posts/1/9/3/pizza_casera_31391_orig.jpg",
+        "Country":"Italy",
+        "continent":"Europa",
+        "ingredients":["tomato sauce","mozzarella cheese","onions","garlic"],
+        "Price":6.49
+},{
+        "id":"AM100",
+        "name": "Mole",
+        "image":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/10/GettyImages-1224505537.jpg.rend.hgtvcom.616.411.suffix/1628633325546.jpeg",
+        "Country":"Mexico",
+        "continent":"America",
+        "ingredients":["chocolate chips","almonds","peanuts","pumpkin seeds"],
+        "Price": 12.99
+},{
+        "id":"EU115",
+        "name": "Fish and Chips",
+        "image":"https://forkandtwist.com/wp-content/uploads/2021/04/IMG_0102-500x500.jpg",
+        "Country":"United Kingdom",
+        "continent":"Europa",
+        "ingredients":["fish fillets ","potato wedges ","tartar sauce","ketchup"],
+        "Price": 10.99
+},{
+        "id":"AS100",
+        "name": "Tandoori Chicken",
+        "image":"https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11-500x500.jpg",
+        "Country":"India",
+        "continent":"Asia",
+        "ingredients":["chicken thighs ","ginger paste ","garam masala powder","lime juice"],
+        "Price": 11.99
+},{
+        "id":"AM105",
+        "name": "Huancaina's style potato",
+        "image":"https://viajaralperu.com/wp-content/uploads/papa-a-la-huancaina-receta.jpg",
+        "Country":"Perú",
+        "continent":"America",
+        "ingredients":["Potatos","Onion","Chili peppers","Cheese"],
+        "Price": 15.99
+},{
+        "id":"EU120",
+        "name": "Bratwurst",
+        "image":"https://foodandjourneys.net/wp-content/uploads/2021/09/Bratwurst-Sauerkraut-PIC7-500x375.jpg",
+        "Country":"Germany",
+        "continent":"Europa",
+        "ingredients":["brats","sauerkraut","mustard","buns"],
+        "Price": 12.99
+},{
+        "id":"AM110",
+        "name": "Curanto",
+        "image":"https://www.viajenaviagem.com/wp-content/uploads/2013/12/chile-chiloe-curanto.jpg",
+        "Country":"Chile",
+        "continent":"America",
+        "ingredients":["sea bass","shrimp","mussels","clams"],
+        "Price": 8.99
+},{
+        "id":"AM115",
+        "name": "Hamburgers",
+        "image":"https://heygrillhey.com/static/47c08cf31c9c6df778aee3088264eddf/Smoked-Hamburgers-Feature.png",
+        "Country":"USA",
+        "continent":"America",
+        "ingredients":["ground beef patties","cheddar cheese slices","lettuce leaves","tomatoes"],
+        "Price": 9.99
+},{
+        "id":"AS105",
+        "name": "Sushi",
+        "image":"https://c.ndtvimg.com/2022-06/tutlv10o_sushi-generic_625x300_17_June_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+        "Country":"Japon",
+        "continent":"Asia",
+        "ingredients":["rice vinegar","soya sauce","wasabi","pickled ginger root"],
+        "Price": 10.99
+},{
+        "id":"AS110",
+        "name": "Nasi Goreng",
+        "image":"https://www.marionskitchen.com/wp-content/uploads/2021/08/Beef-Nasi-Goreng-2.jpg",
+        "Country":"Indonesia",
+        "continent":"Oceania",
+        "ingredients":["chicken", "fried egg", "satay"],
+        "Price":8.99
+},{
+        "id":"AM120",
+        "name":"spotted rooster",
+        "image":"https://foreignfork.com/wp-content/uploads/2022/10/GalloPintoFEATURE-1-500x375.png",
+        "Country":"Costa Rica",
+        "continent":"America",
+        "ingredients":["rice","beans", "eggs", "custard"],
+        "Price":7.99
+},{
+        "id":"AS115",
+        "name":"Dim sum",
+        "image":"https://images.eatsmarter.com/sites/default/files/styles/576x432/public/shrimp-dim-sum-590648.jpg",
+        "Country":"China",
+        "continent":"Asia",
+        "ingredients":["meat", "shrimp", "wontons"],
+        "Price":11.99
+},{
+        "id":"AS120",
+        "name":"Falafel",
+        "image":"https://www.recipetineats.com/wp-content/uploads/2018/09/Falafel_4.jpg?w=500&h=375&crop=1",
+        "Country":"Middle East",
+        "continent":"Africa",
+        "ingredients":["bread", "chickpeas", "yogurt"],
+        "Price":9.99
+}
+]
+}

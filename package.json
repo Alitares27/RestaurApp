@@ -1,13 +1,14 @@
 {
-  "name": "restaurapp",
+  "name": "StorApp",
   "version": "1.0.0",
   "description": "WDD 330 Final Project",
-   "scripts": {
+  "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "Aldair Payehuanca <pay22002@byui.edu> & Felix Wilson Gbedemah <>",
-  "dependencies": {
-    "parcel": "^2.9.2"
+  "author": "Aldair Payehuanca <pay22002@byui.edu> & Felix Wilson Gbedemah <afrogbede09@gmail.com>",
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "parcel": "^2.9.3"
   }
 }
